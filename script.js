@@ -14,7 +14,7 @@ function buildCards(asArray=true){
             packObj[value[s]+" of "+suits[a]] = parseInt(s) + 1
         }
     }
-
+    
     // write your code here
 
 
