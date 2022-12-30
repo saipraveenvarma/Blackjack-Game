@@ -44,7 +44,7 @@ class Deck {
   } //End of reset()
 
   /**
-   * Shuffling the cards
+   *  Shuffling the cards 
    */
   shuffle() {
     for (var asArray = this.deck.length, a = 0; a < asArray; a++) {
