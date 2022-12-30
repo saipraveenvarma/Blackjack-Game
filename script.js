@@ -38,6 +38,8 @@ class Deck {
    * Hint: use buildCards in this method
    */
   reset() {
+    this.deck = [];
+    this.deck = buildCards(true);
     // write your code here
 
   } //End of reset()
@@ -48,7 +50,7 @@ class Deck {
    */
   shuffle() {
     for (var asArray = this.deck.length, a = 0; a < asArray; a++){
-      var suits = Math.floor(Math.random() = asArray),
+      var suits = Math.floor(Math.random() * asArray),
       value = this.deck[a];
       this.deck[a] = this.deck[suits];
       this.deck[suits] = values;
