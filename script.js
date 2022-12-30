@@ -41,22 +41,19 @@ class Deck {
     this.deck = [];
     this.deck = buildCards(true);
     // write your code here
-
   } //End of reset()
-
 
   /**
    * Shuffling the cards
    */
   shuffle() {
-    for (var asArray = this.deck.length, a = 0; a < asArray; a++){
+    for (var asArray = this.deck.length, a = 0; a < asArray; a++) {
       var suits = Math.floor(Math.random() * asArray),
-      value = this.deck[a];
+        values = this.deck[a];
       this.deck[a] = this.deck[suits];
       this.deck[suits] = values;
     }
     // write your code here
-        
   } //End of shuffle()
 
   /**
